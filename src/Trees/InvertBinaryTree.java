@@ -1,12 +1,8 @@
 package Trees;
 
-import Grafos.Node;
 import Grafos.TreeNode;
-
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Set;
 
 public class InvertBinaryTree {
     public static void main(String[] args) {
@@ -16,7 +12,7 @@ public class InvertBinaryTree {
         t1.right = null;
         invertTree(t1);
     }
-
+    //Método Iterativo
     public static TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null;
@@ -39,7 +35,7 @@ public class InvertBinaryTree {
         return root;
     }
 
-    //Recursividad
+    //Método Recursivo
     /*
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {

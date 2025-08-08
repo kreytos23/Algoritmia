@@ -1,0 +1,6 @@
+ERROR "Este es una linea con error 1"
+ERROR "Este es una linea con error 2"
+ERROR "Este es una linea con error 3"
+ERROR "Este es una linea con error 4"
+ERROR "Este es una linea con error 5"
+ERROR "Este es una linea con error 6"

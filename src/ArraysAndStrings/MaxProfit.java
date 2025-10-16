@@ -10,9 +10,13 @@ public class MaxProfit {
     }
 
     public static int maxProfit(int[] prices){
+        if (prices == null || prices.length < 2)
+            return 0;
+
         int buy = prices[0];
         int profit = 0;
-        for (int i = 1; i < prices.length; i++) {
+        int n = prices.length;
+        for (int i = 1; i < n; i++) {
             if (prices[i] < buy) {
                 buy = prices[i];
             } else if (prices[i] - buy > profit) {

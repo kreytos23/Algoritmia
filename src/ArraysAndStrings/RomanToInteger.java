@@ -6,7 +6,8 @@ import java.util.Map;
 public class RomanToInteger {
     public static void main(String[] args) {
         String romanNumber = "MCMXIV";
-        System.out.println(romanToInt(romanNumber));
+
+        System.out.println(romanToInt(romanNumber) * binaryToInt("111100101"));
     }
 
     public static int romanToInt(String s) {
@@ -30,5 +31,10 @@ public class RomanToInteger {
             }
         }
         return currentSum;
+    }
+
+    public static int binaryToInt(String s) {
+
+        return Integer.parseInt(s,2);
     }
 }
